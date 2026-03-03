@@ -35,4 +35,59 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const animatedElements = document.querySelectorAll('.animate-on-scroll');
     animatedElements.forEach(el => observer.observe(el));
+
+    // Contact form – submit to Zapier webhook
+    const ZAPIER_WEBHOOK_URL = 'https://hooks.zapier.com/hooks/catch/13711388/u0wcv8a/';
+    const contactForm = document.getElementById('contact-form-el');
+
+    if (contactForm) {
+        contactForm.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const submitBtn = contactForm.querySelector('button[type="submit"]');
+            const originalText = submitBtn.textContent;
+
+            submitBtn.disabled = true;
+            submitBtn.textContent = 'Sending…';
+
+            const payload = {
+                'full-name': contactForm.querySelector('#full-name').value.trim(),
+                email: contactForm.querySelector('#email').value.trim(),
+                phone: contactForm.querySelector('#phone').value.trim(),
+                message: contactForm.querySelector('#message').value.trim()
+            };
+
+            const body = new URLSearchParams(payload).toString();
+
+            try {
+                const res = await fetch(ZAPIER_WEBHOOK_URL, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+                    body
+                });
+                // Zapier often doesn't send CORS headers, so res.ok may be false (opaque response) even when the hook succeeded
+                const success = res.ok || res.status === 0;
+                if (success) {
+                    contactForm.reset();
+                    submitBtn.textContent = 'Message sent!';
+                    submitBtn.classList.add('!bg-green-600');
+                    setTimeout(() => {
+                        submitBtn.textContent = originalText;
+                        submitBtn.classList.remove('!bg-green-600');
+                        submitBtn.disabled = false;
+                    }, 3000);
+                } else {
+                    throw new Error('Request failed: ' + res.status);
+                }
+            } catch (err) {
+                console.error('Form submit error:', err);
+                submitBtn.textContent = 'Error – try again';
+                submitBtn.classList.add('!bg-red-600');
+                setTimeout(() => {
+                    submitBtn.textContent = originalText;
+                    submitBtn.classList.remove('!bg-red-600');
+                    submitBtn.disabled = false;
+                }, 3000);
+            }
+        });
+    }
 });
