@@ -68,3 +68,14 @@ html {
 .group:hover .icon-bounce {
     transform: scale(1.2) translateY(-2px);
 }
+
+/* Stats badge micro-animation (About section) – hover only, not click */
+.stats-badge {
+    cursor: default;
+}
+@media (hover: hover) {
+    .stats-badge:hover {
+        transform: scale(1.05) translateY(-4px);
+        box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.15), 0 8px 10px -6px rgb(0 0 0 / 0.1), 0 0 0 1px rgb(0 128 163 / 0.2);
+    }
+}
