@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+
+<html lang="vi"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#0080a3",
+                        "accent": "#f97316",
+                        "background-light": "#f5f8f8",
+                        "background-dark": "#0f1f23",
+                    },
+                    fontFamily: {
+                        "display": ["Lexend", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.5rem",
+                        "lg": "1rem",
+                        "xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 transition-colors duration-300">
+<div class="relative flex min-h-screen flex-col">
+<!-- Header -->
+<header class="sticky top-0 z-50 bg-white/80 dark:bg-background-dark/80 backdrop-blur-md border-b border-primary/10 px-4 md:px-20 lg:px-40 py-3">
+<div class="flex items-center justify-between max-w-7xl mx-auto">
+<div class="flex items-center gap-3">
+<div class="text-primary size-8 flex items-center justify-center">
+<span class="material-symbols-outlined text-3xl">school</span>
+</div>
+<h2 class="text-primary text-xl font-extrabold tracking-tight">NaNu NaNa</h2>
+</div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-slate-700 dark:text-slate-200 text-sm font-semibold hover:text-primary transition-colors" href="#">Khóa học</a>
+<a class="text-primary text-sm font-bold border-b-2 border-primary" href="#">Trình độ</a>
+<a class="text-slate-700 dark:text-slate-200 text-sm font-semibold hover:text-primary transition-colors" href="#">Lịch khai giảng</a>
+<a class="text-slate-700 dark:text-slate-200 text-sm font-semibold hover:text-primary transition-colors" href="#">Liên hệ</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="bg-primary hover:bg-primary/90 text-white px-6 py-2.5 rounded-xl text-sm font-bold transition-all shadow-lg shadow-primary/20">
+                        Đăng ký ngay
+                    </button>
+<div class="size-10 rounded-full bg-slate-200 dark:bg-slate-700 overflow-hidden border-2 border-primary/20" data-alt="User profile placeholder">
+<img alt="Avatar" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDIY719y8VWgXlCUXOY9doDOC7yeEKyzLbL9r3OjU4bwwWBB6rdB1zbQJSp3vpAEt5ZwCP6YaNzvmDxH7TE0WgOo-VeV-FoZ59vVjg10Ff6hiFVelmD8FVHxLhQdq2LspJJ4Cip6F1osbf3iSUo_GYvP-gs_ipe-pZBFalaIRztMmx8UUVEutbzsevwvXRovYrc54Q4UmpXo_DWTJXmccBo_RXz79nZEIPAIhIbKiKpHPebVDYuR7KyDd4K8Iz3vuLT7zDmMUFPg55K"/>
+</div>
+</div>
+</div>
+</header>
+<main class="flex-1">
+<!-- Hero Section -->
+<section class="max-w-7xl mx-auto px-4 md:px-20 lg:px-40 py-12 md:py-20">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+<div class="space-y-6">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-bold uppercase tracking-wider">
+<span class="material-symbols-outlined text-sm">verified</span> Lộ trình chuẩn CEFR
+                        </div>
+<h1 class="text-4xl md:text-6xl font-black leading-[1.1] tracking-tight text-slate-900 dark:text-white">
+                            Các trình độ tiếng Đức tại <span class="text-primary">NaNu NaNa</span>
+</h1>
+<p class="text-lg text-slate-600 dark:text-slate-400 max-w-xl">
+                            Hành trình chinh phục ngôn ngữ từ A1 đến C1 cùng đội ngũ giáo viên tận tâm. Chúng tôi cam kết giúp bạn làm chủ tiếng Đức một cách tự nhiên và hiệu quả nhất.
+                        </p>
+<div class="flex flex-wrap gap-4">
+<button class="bg-primary text-white px-8 py-4 rounded-xl font-bold flex items-center gap-2 hover:translate-y-[-2px] transition-all">
+                                Khám phá lộ trình <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+<button class="border-2 border-primary/20 text-primary px-8 py-4 rounded-xl font-bold hover:bg-primary/5 transition-all">
+                                Tư vấn miễn phí
+                            </button>
+</div>
+</div>
+<div class="relative">
+<div class="aspect-video lg:aspect-square rounded-3xl overflow-hidden shadow-2xl rotate-2" data-alt="Student studying German language with books">
+<img alt="Học tiếng Đức" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuByj1oHElHOwP75EeP258smKQVEkE3qIi9WEK4mjzXpUnd2-XsXHliPuZG_shIzgwqfPjF7HaMFQyJI6Jyob_bRZ-CVHR4HSt0WbWZQ2pUeHlwXwdZkpx3Wr8QhrJydGHIUhm0Tw58iskifP9Px60NPbcFvR202tVhAlGupLnASEOrb0wLQjHp6Duj4XI1GrlQnZWAEk1tmrCinFpIcssDjk7M4NbNTDl2KRf4npUBXVO9tJqDcRXGzuwaNHgzHx3Q8qArV_FqDSGm1"/>
+</div>
+<div class="absolute -bottom-6 -left-6 bg-accent p-6 rounded-2xl shadow-xl text-white hidden md:block">
+<p class="text-4xl font-bold">98%</p>
+<p class="text-sm font-medium opacity-90">Học viên đạt mục tiêu</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Course Levels List -->
+<section class="bg-white dark:bg-background-dark/50 py-20 px-4 md:px-20 lg:px-40">
+<div class="max-w-5xl mx-auto space-y-16">
+<div class="text-center space-y-4 mb-12">
+<h2 class="text-3xl font-bold tracking-tight">Lộ trình đào tạo chuẩn khung CEFR</h2>
+<div class="h-1.5 w-20 bg-accent mx-auto rounded-full"></div>
+</div>
+<!-- A1 Level -->
+<div class="group grid grid-cols-1 md:grid-cols-12 gap-0 rounded-3xl overflow-hidden bg-background-light dark:bg-slate-800/50 shadow-sm hover:shadow-xl transition-all border border-slate-100 dark:border-slate-700">
+<div class="md:col-span-4 h-64 md:h-auto overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Beginners talking and learning basic German" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB5EMHkFudTemkLfgyxwk6DJs6tCGTNv9WOiQYPvFxcuoFvbarDa7tkvRGBm7eMBLqx-YJhS2Fo7DwcA541oes97VQ3qxdRrEn9Nc-vf1d-9trmY6E4M8mK_InZOf85Pg0lXjLQH1c-jlBNu-XrgZ2-BCVeFH1grRZBma6kizbMI3Hs2MNMf12NBkLKwQ4CtILYiQr6MTB0TnOyuw8Rwe9gWOR0ZgkBOXWDVnMRi8DWD__AIonVADS4Q8SJ9AfJK99jz7A5SBE5NP1X"/>
+</div>
+<div class="md:col-span-8 p-8 md:p-10 flex flex-col justify-center">
+<div class="flex justify-between items-start mb-4">
+<div>
+<span class="text-accent font-bold text-sm tracking-widest uppercase mb-1 block">Level 01</span>
+<h3 class="text-2xl font-bold text-slate-900 dark:text-white">Trình độ A1 (Cơ bản)</h3>
+</div>
+<span class="bg-primary/10 text-primary px-4 py-1 rounded-full text-xs font-bold uppercase">Phổ biến</span>
+</div>
+<p class="text-slate-600 dark:text-slate-400 mb-6 leading-relaxed">
+                                Bắt đầu làm quen với tiếng Đức qua các chủ đề chào hỏi, giới thiệu bản thân và số đếm. Bạn sẽ xây dựng nền tảng vững chắc để tự tin bước tiếp.
+                            </p>
+<div class="grid grid-cols-2 gap-4 mb-8">
+<div class="flex items-center gap-2 text-sm text-slate-700 dark:text-slate-300">
+<span class="material-symbols-outlined text-primary text-xl">record_voice_over</span> Phát âm chuẩn
+                                </div>
+<div class="flex items-center gap-2 text-sm text-slate-700 dark:text-slate-300">
+<span class="material-symbols-outlined text-primary text-xl">hearing</span> Nghe hiểu cơ bản
+                                </div>
+<div class="flex items-center gap-2 text-sm text-slate-700 dark:text-slate-300">
+<span class="material-symbols-outlined text-primary text-xl">edit_note</span> Viết câu đơn giản
+                                </div>
+<div class="flex items-center gap-2 text-sm text-slate-700 dark:text-slate-300">
+<span class="material-symbols-outlined text-primary text-xl">menu_book</span> Đọc hiểu căn bản
+                                </div>
+</div>
+<div class="flex gap-4">
+<button class="flex-1 md:flex-none px-8 py-3 bg-primary text-white font-bold rounded-xl hover:bg-primary/90 transition-all">Đăng ký khóa A1</button>
+<button class="px-4 py-3 border border-primary/20 text-primary font-bold rounded-xl hover:bg-primary/5 transition-all">Chi tiết</button>
+</div>
+</div>
+</div>
+<!-- A2 Level -->
+<div class="group grid grid-cols-1 md:grid-cols-12 gap-0 rounded-3xl overflow-hidden bg-background-light dark:bg-slate-800/50 shadow-sm hover:shadow-xl transition-all border border-slate-100 dark:border-slate-700">
+<div class="md:col-span-4 h-64 md:h-auto overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="People interacting in a German cafe setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC6RnLWdvUWXgfuz1rinVb5qYwdjt_vBkRxhPmi2wPLt1TVQWHF5kndHIDkqDHy9Hwp9xsANtVe2PETmaF_u6gZmcm1BuIzW4BNtrdBNadXkilM9KKNprdWN8RoTVsTWfeb43Na7tEzApvxtj1E2tTjlIqdVOxXkgZuqS5roTVHh1c2s8Yqc0ueELhsje03eyMpyG2-u81nje85yQBUOEb9dqjyDr_u4dB_iSlkbyVPEtcmRp4D8t89UK_rkEAX17oNPrKvXaIdkZx_"/>
+</div>
+<div class="md:col-span-8 p-8 md:p-10 flex flex-col justify-center">
+<div class="flex justify-between items-start mb-4">
+<div>
+<span class="text-accent font-bold text-sm tracking-widest uppercase mb-1 block">Level 02</span>
+<h3 class="text-2xl font-bold text-slate-900 dark:text-white">Trình độ A2 (Giao tiếp)</h3>
+</div>
+</div>
+<p class="text-slate-600 dark:text-slate-400 mb-6 leading-relaxed">
+                                Nâng cao khả năng giao tiếp trong các tình huống hàng ngày như mua sắm, công việc và du lịch. Hiểu rõ hơn về cấu trúc ngữ pháp phức tạp.
+                            </p>
+<div class="grid grid-cols-2 gap-4 mb-8">
+<div class="flex items-center gap-2 text-sm text-slate-700 dark:text-slate-300">
+<span class="material-symbols-outlined text-primary text-xl">chat</span> Đối thoại trôi chảy
+                                </div>
+<div class="flex items-center gap-2 text-sm text-slate-700 dark:text-slate-300">
+<span class="material-symbols-outlined text-primary text-xl">description</span> Hiểu văn bản ngắn
+                                </div>
+<div class="flex items-center gap-2 text-sm text-slate-700 dark:text-slate-300">
+<span class="material-symbols-outlined text-primary text-xl">mail</span> Viết thư cá nhân
+                                </div>
+<div class="flex items-center gap-2 text-sm text-slate-700 dark:text-slate-300">
+<span class="material-symbols-outlined text-primary text-xl">travel_explore</span> Tiếng Đức du lịch
+                                </div>
+</div>
+<div class="flex gap-4">
+<button class="flex-1 md:flex-none px-8 py-3 bg-primary text-white font-bold rounded-xl hover:bg-primary/90 transition-all">Đăng ký khóa A2</button>
+<button class="px-4 py-3 border border-primary/20 text-primary font-bold rounded-xl hover:bg-primary/5 transition-all">Chi tiết</button>
+</div>
+</div>
+</div>
+<!-- B1 Level -->
+<div class="group grid grid-cols-1 md:grid-cols-12 gap-0 rounded-3xl overflow-hidden bg-background-light dark:bg-slate-800/50 shadow-sm hover:shadow-xl transition-all border border-slate-100 dark:border-slate-700">
+<div class="md:col-span-4 h-64 md:h-auto overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Student confidently presenting in German" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDkQOwGQ4RmWEepEzkxNjYesF31oE26C9V6BqFOij8ftNgdGDYeaJcQJhxWU1LW6T8fuGhqQlbOUa2dET5OwustrUTMO8OOIynNCjT4GOLJagLuF5moy5BRL5DCcVtFq-5GkTodw7wNrJjuDZlcDryzW5OrAYuUNZKAsjKnrkosW-sjTqeQmky411nGrhtm85ItbCCjW3lBNr34uMp7oeilcQhTfGNhv2fL2A7p0J2-WiFGo7Q_OnvAsJRXhZ8M7piK6iOhW8NPkv-A"/>
+</div>
+<div class="md:col-span-8 p-8 md:p-10 flex flex-col justify-center">
+<div class="flex justify-between items-start mb-4">
+<div>
+<span class="text-accent font-bold text-sm tracking-widest uppercase mb-1 block">Level 03</span>
+<h3 class="text-2xl font-bold text-slate-900 dark:text-white">Trình độ B1 (Độc lập)</h3>
+</div>
+</div>
+<p class="text-slate-600 dark:text-slate-400 mb-6 leading-relaxed">
+                                Đạt được sự tự tin khi diễn đạt ý kiến cá nhân và giải quyết hầu hết các tình huống khi đi du lịch hoặc làm việc tại Đức.
+                            </p>
+<div class="grid grid-cols-2 gap-4 mb-8">
+<div class="flex items-center gap-2 text-sm text-slate-700 dark:text-slate-300">
+<span class="material-symbols-outlined text-primary text-xl">campaign</span> Thuyết trình ngắn
+                                </div>
+<div class="flex items-center gap-2 text-sm text-slate-700 dark:text-slate-300">
+<span class="material-symbols-outlined text-primary text-xl">forum</span> Thảo luận ý kiến
+                                </div>
+<div class="flex items-center gap-2 text-sm text-slate-700 dark:text-slate-300">
+<span class="material-symbols-outlined text-primary text-xl">article</span> Hiểu bài báo chính
+                                </div>
+<div class="flex items-center gap-2 text-sm text-slate-700 dark:text-slate-300">
+<span class="material-symbols-outlined text-primary text-xl">edit_document</span> Viết luận ngắn
+                                </div>
+</div>
+<div class="flex gap-4">
+<button class="flex-1 md:flex-none px-8 py-3 bg-primary text-white font-bold rounded-xl hover:bg-primary/90 transition-all">Đăng ký khóa B1</button>
+<button class="px-4 py-3 border border-primary/20 text-primary font-bold rounded-xl hover:bg-primary/5 transition-all">Chi tiết</button>
+</div>
+</div>
+</div>
+<!-- B2 Level -->
+<div class="group grid grid-cols-1 md:grid-cols-12 gap-0 rounded-3xl overflow-hidden bg-background-light dark:bg-slate-800/50 shadow-sm hover:shadow-xl transition-all border border-slate-100 dark:border-slate-700">
+<div class="md:col-span-4 h-64 md:h-auto overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Corporate meeting in Germany" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCeax3BfedeWnaPqBm_OM7FHJLh3zSbP1Sqk3Mhpdluvta3X_cS1-tfamWRm0FC79ANtPv9ybrI6xaiU6reu_unQR4QMrd0oQKzP88fEqeyMkBe1bFu3QB6az_yyBzBiRHaKEbom5TpBJ5ie3DgmROsp1CMhTh-s3ZXFxB8WSgDvmV6I-V0X-aqJG1mwOPn6rW-esWs6_M0_2ipDZ5QCZVEu6E9FrmnEuLikr7EpT-ENWq_671xtPUiGNa65KhxUweBWKq3VzALs_Jz"/>
+</div>
+<div class="md:col-span-8 p-8 md:p-10 flex flex-col justify-center">
+<div class="flex justify-between items-start mb-4">
+<div>
+<span class="text-accent font-bold text-sm tracking-widest uppercase mb-1 block">Level 04</span>
+<h3 class="text-2xl font-bold text-slate-900 dark:text-white">Trình độ B2 (Nâng cao)</h3>
+</div>
+</div>
+<p class="text-slate-600 dark:text-slate-400 mb-6 leading-relaxed">
+                                Hiểu nội dung chính của các văn bản phức tạp về các chủ đề cụ thể và trừu tượng, bao gồm cả các cuộc thảo luận chuyên môn.
+                            </p>
+<div class="grid grid-cols-2 gap-4 mb-8">
+<div class="flex items-center gap-2 text-sm text-slate-700 dark:text-slate-300">
+<span class="material-symbols-outlined text-primary text-xl">work_history</span> Tiếng Đức chuyên ngành
+                                </div>
+<div class="flex items-center gap-2 text-sm text-slate-700 dark:text-slate-300">
+<span class="material-symbols-outlined text-primary text-xl">psychology</span> Phân tích chuyên sâu
+                                </div>
+<div class="flex items-center gap-2 text-sm text-slate-700 dark:text-slate-300">
+<span class="material-symbols-outlined text-primary text-xl">speed</span> Giao tiếp tốc độ cao
+                                </div>
+<div class="flex items-center gap-2 text-sm text-slate-700 dark:text-slate-300">
+<span class="material-symbols-outlined text-primary text-xl">history_edu</span> Viết báo cáo học thuật
+                                </div>
+</div>
+<div class="flex gap-4">
+<button class="flex-1 md:flex-none px-8 py-3 bg-primary text-white font-bold rounded-xl hover:bg-primary/90 transition-all">Đăng ký khóa B2</button>
+<button class="px-4 py-3 border border-primary/20 text-primary font-bold rounded-xl hover:bg-primary/5 transition-all">Chi tiết</button>
+</div>
+</div>
+</div>
+<!-- C1 Level -->
+<div class="group grid grid-cols-1 md:grid-cols-12 gap-0 rounded-3xl overflow-hidden bg-background-light dark:bg-slate-800/50 shadow-sm hover:shadow-xl transition-all border border-slate-100 dark:border-slate-700">
+<div class="md:col-span-4 h-64 md:h-auto overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Academic environment with high level German study" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA-BL_2pXW1R9mtzPG6z25An7nivD3g_NIk2p1XXOHPI_28YEKNTXSLDM650eEaHdZeGZJp8neXMn07fQCSAu67of-4PWLT3Nf-xMvf04IkZj0n-JQYaGSBvpp365B5I7TfA5oyne6aiz_1DzLe7JnlLpi7PNSc9wSLTxReHqh7sz6PgaAS_vz8pra9jcWQsJ_ef7cD5-53HJ3pXcGhA5kejGYdmPwauzcJwwZDDUycYpqxHwsP6agY61q00_s1dDPzB97_Ql9WVsFy"/>
+</div>
+<div class="md:col-span-8 p-8 md:p-10 flex flex-col justify-center">
+<div class="flex justify-between items-start mb-4">
+<div>
+<span class="text-accent font-bold text-sm tracking-widest uppercase mb-1 block">Level 05</span>
+<h3 class="text-2xl font-bold text-slate-900 dark:text-white">Trình độ C1 (Lưu loát)</h3>
+</div>
+</div>
+<p class="text-slate-600 dark:text-slate-400 mb-6 leading-relaxed">
+                                Sử dụng tiếng Đức linh hoạt và hiệu quả cho các mục đích xã hội, học thuật và chuyên môn. Hiểu được các ý nghĩa ẩn dụ và cấu trúc văn phong tinh tế.
+                            </p>
+<div class="grid grid-cols-2 gap-4 mb-8">
+<div class="flex items-center gap-2 text-sm text-slate-700 dark:text-slate-300">
+<span class="material-symbols-outlined text-primary text-xl">auto_stories</span> Đọc hiểu văn học
+                                </div>
+<div class="flex items-center gap-2 text-sm text-slate-700 dark:text-slate-300">
+<span class="material-symbols-outlined text-primary text-xl">interpreter_mode</span> Biên phiên dịch cơ bản
+                                </div>
+<div class="flex items-center gap-2 text-sm text-slate-700 dark:text-slate-300">
+<span class="material-symbols-outlined text-primary text-xl">school</span> Nghiên cứu đại học
+                                </div>
+<div class="flex items-center gap-2 text-sm text-slate-700 dark:text-slate-300">
+<span class="material-symbols-outlined text-primary text-xl">contract</span> Soạn thảo hợp đồng
+                                </div>
+</div>
+<div class="flex gap-4">
+<button class="flex-1 md:flex-none px-8 py-3 bg-primary text-white font-bold rounded-xl hover:bg-primary/90 transition-all">Đăng ký khóa C1</button>
+<button class="px-4 py-3 border border-primary/20 text-primary font-bold rounded-xl hover:bg-primary/5 transition-all">Chi tiết</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="max-w-7xl mx-auto px-4 md:px-20 lg:px-40 py-20">
+<div class="bg-primary rounded-3xl p-8 md:p-16 text-center text-white relative overflow-hidden">
+<div class="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full -mr-32 -mt-32"></div>
+<div class="absolute bottom-0 left-0 w-48 h-48 bg-accent/20 rounded-full -ml-24 -mb-24"></div>
+<h2 class="text-3xl md:text-5xl font-extrabold mb-6">Bạn chưa biết mình ở trình độ nào?</h2>
+<p class="text-lg opacity-90 mb-10 max-w-2xl mx-auto font-light">
+                        Hãy tham gia bài kiểm tra năng lực miễn phí của chúng tôi để nhận lộ trình học tập được cá nhân hóa ngay hôm nay.
+                    </p>
+<button class="bg-white text-primary px-10 py-4 rounded-xl font-bold text-lg hover:bg-slate-50 transition-all shadow-xl">
+                        Làm bài Test ngay
+                    </button>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-background-dark text-slate-300 py-16 px-4 md:px-20 lg:px-40">
+<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
+<div class="space-y-6">
+<div class="flex items-center gap-3 text-white">
+<span class="material-symbols-outlined text-3xl">school</span>
+<h2 class="text-xl font-extrabold">NaNu NaNa</h2>
+</div>
+<p class="text-sm leading-relaxed opacity-70">
+                        Trung tâm đào tạo tiếng Đức hàng đầu với lộ trình học tập tinh gọn và hiệu quả.
+                    </p>
+<div class="flex gap-4">
+<a class="size-8 rounded-full bg-white/5 flex items-center justify-center hover:bg-primary transition-colors" href="#">
+<span class="material-symbols-outlined text-sm">social_leaderboard</span>
+</a>
+<a class="size-8 rounded-full bg-white/5 flex items-center justify-center hover:bg-primary transition-colors" href="#">
+<span class="material-symbols-outlined text-sm">video_library</span>
+</a>
+</div>
+</div>
+<div>
+<h4 class="text-white font-bold mb-6">Khóa học</h4>
+<ul class="space-y-4 text-sm">
+<li><a class="hover:text-primary transition-colors" href="#">Tiếng Đức A1-A2</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Tiếng Đức B1-B2</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Luyện thi TestDaF</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Tiếng Đức giao tiếp</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-white font-bold mb-6">Thông tin</h4>
+<ul class="space-y-4 text-sm">
+<li><a class="hover:text-primary transition-colors" href="#">Về chúng tôi</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Cảm nhận học viên</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Tuyển dụng</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Tin tức</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-white font-bold mb-6">Liên hệ</h4>
+<ul class="space-y-4 text-sm">
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary">location_on</span>
+<span>Hà Nội: 123 Phố Huế, Hai Bà Trưng</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary">call</span>
+<span>0988.XXX.XXX</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary">mail</span>
+<span>info@nanunana.edu.vn</span>
+</li>
+</ul>
+</div>
+</div>
+<div class="max-w-7xl mx-auto mt-16 pt-8 border-t border-white/5 text-center text-xs opacity-50">
+<p>© 2024 NaNu NaNa German Language Center. All rights reserved.</p>
+</div>
+</footer>
+</div>
+</body></html>
