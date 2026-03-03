@@ -45,7 +45,7 @@
                     <a class="text-sm font-semibold transition-colors hover:text-primary" href="#">Home</a>
                     <a class="text-sm font-semibold transition-colors hover:text-primary" href="#about">About Us</a>
                     <a class="text-sm font-semibold transition-colors hover:text-primary" href="#courses">Courses</a>
-                    <a class="text-sm font-semibold transition-colors hover:text-primary" href="#contact">Contact</a>
+                    <a class="text-sm font-semibold transition-colors hover:text-primary" href="#contact-form">Contact</a>
                 </nav>
                 <div class="flex items-center gap-4">
                     <button class="hidden rounded-full bg-primary px-6 py-2 text-sm font-bold text-white transition-all hover:bg-primary/90 sm:block">
@@ -62,7 +62,7 @@
                     <a class="text-sm font-semibold transition-colors hover:text-primary" href="#">Home</a>
                     <a class="text-sm font-semibold transition-colors hover:text-primary" href="#about">About Us</a>
                     <a class="text-sm font-semibold transition-colors hover:text-primary" href="#courses">Courses</a>
-                    <a class="text-sm font-semibold transition-colors hover:text-primary" href="#contact">Contact</a>
+                    <a class="text-sm font-semibold transition-colors hover:text-primary" href="#contact-form">Contact</a>
                     <button class="rounded-full bg-primary px-6 py-2 text-sm font-bold text-white transition-all hover:bg-primary/90 w-fit mt-2">
                         Register
                     </button>
@@ -107,37 +107,65 @@
             </div>
         </section>
 
-        <!-- Mission Section -->
-        <section class="bg-white py-20 dark:bg-background-dark/50" id="about">
-            <div class="mx-auto max-w-7xl px-6 lg:px-12">
-                <div class="mb-16 text-center">
-                    <h2 class="mb-4 text-3xl font-black lg:text-4xl">About Dennis Luo & Our Mission</h2>
-                    <div class="mx-auto h-1 w-24 rounded-full bg-accent"></div>
-                    <p class="mx-auto mt-6 max-w-2xl text-slate-600 dark:text-slate-400">
-                        At NaNu NaNa, we don't just teach the language; we inspire and open up future opportunities in Germany.
-                    </p>
+        <!-- About Section -->
+        <section class="relative bg-white px-6 py-12 lg:px-12 lg:py-24 dark:bg-background-dark/50" id="about">
+            <div class="mx-auto flex max-w-7xl flex-col items-center gap-12 lg:flex-row">
+                
+                <!-- Visual Content (Left side to alternate with Hero) -->
+                <div class="relative flex-1 w-full">
+                    <div class="aspect-square w-full rounded-3xl bg-accent/5 p-4 lg:aspect-[4/5] overflow-hidden">
+                        <div class="h-full w-full rounded-2xl bg-cover bg-center" data-alt="Education and studying German in an academic environment" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuA-BL_2pXW1R9mtzPG6z25An7nivD3g_NIk2p1XXOHPI_28YEKNTXSLDM650eEaHdZeGZJp8neXMn07fQCSAu67of-4PWLT3Nf-xMvf04IkZj0n-JQYaGSBvpp365B5I7TfA5oyne6aiz_1DzLe7JnlLpi7PNSc9wSLTxReHqh7sz6PgaAS_vz8pra9jcWQsJ_ef7cD5-53HJ3pXcGhA5kejGYdmPwauzcJwwZDDUycYpqxHwsP6agY61q00_s1dDPzB97_Ql9WVsFy')">
+                        </div>
+                    </div>
+                    <!-- Decorative element -->
+                    <div class="absolute -bottom-6 -right-6 flex flex-col items-center justify-center rounded-2xl bg-primary p-6 text-white shadow-xl">
+                        <span class="text-3xl font-black">1,000+</span>
+                        <p class="text-[10px] font-bold uppercase mt-1 opacity-90">Students Passed B1</p>
+                    </div>
                 </div>
-                <div class="grid grid-cols-1 gap-8 md:grid-cols-3">
-                    <div class="group flex flex-col items-center rounded-2xl border border-primary/10 bg-background-light p-8 text-center transition-all hover:shadow-xl dark:bg-background-dark">
-                        <div class="mb-6 flex h-16 w-16 items-center justify-center rounded-full bg-primary/10 text-primary transition-all group-hover:bg-primary group-hover:text-white">
-                            <span class="material-symbols-outlined text-3xl">psychology</span>
-                        </div>
-                        <h3 class="mb-3 text-xl font-bold">Dedicated Teaching</h3>
-                        <p class="text-sm leading-relaxed text-slate-600 dark:text-slate-400">Dennis Luo personally guides with modern methods, focusing on practice and reflexes.</p>
+
+                <!-- Text Content (Right side) -->
+                <div class="flex flex-1 flex-col gap-6 text-left">
+                    <div class="inline-flex w-fit items-center gap-2 rounded-full bg-primary/10 px-4 py-1.5 text-sm font-bold text-primary">
+                        <span class="material-symbols-outlined text-sm">history_edu</span>
+                        Our Story
                     </div>
-                    <div class="group flex flex-col items-center rounded-2xl border border-primary/10 bg-background-light p-8 text-center transition-all hover:shadow-xl dark:bg-background-dark">
-                        <div class="mb-6 flex h-16 w-16 items-center justify-center rounded-full bg-accent/10 text-accent transition-all group-hover:bg-accent group-hover:text-white">
-                            <span class="material-symbols-outlined text-3xl">map</span>
+                    <h2 class="text-3xl font-black leading-tight tracking-tight lg:text-5xl">
+                        More than just a language course. <span class="text-accent">A pathway to your future.</span>
+                    </h2>
+                    
+                    <div class="space-y-4 text-slate-600 dark:text-slate-400 leading-relaxed">
+                        <p>
+                            <strong class="text-slate-900 dark:text-slate-100">NaNu NaNa</strong> was founded in 2020 in Germany with a simple but powerful goal: to help Vietnamese students turn their dream of living and working in Germany into reality.
+                        </p>
+                        <p>
+                            What started as a small project has grown into a trusted learning community. Since then, we have helped over 1,000 students successfully pass the B1 Goethe Exam — opening doors to Ausbildung programs, universities, and new careers in Germany.
+                        </p>
+                        
+                        <div class="my-6 border-l-4 border-accent pl-6">
+                            <p class="text-lg font-medium italic text-slate-800 dark:text-slate-200">
+                                But for us, it has never been just about passing an exam.
+                            </p>
+                            <div class="mt-4 flex flex-col gap-2 font-bold text-primary">
+                                <div class="flex items-center gap-2"><span class="material-symbols-outlined text-accent">check_circle</span> It is about confidence.</div>
+                                <div class="flex items-center gap-2"><span class="material-symbols-outlined text-accent">check_circle</span> It is about opportunity.</div>
+                                <div class="flex items-center gap-2"><span class="material-symbols-outlined text-accent">check_circle</span> It is about building a future.</div>
+                            </div>
                         </div>
-                        <h3 class="mb-3 text-xl font-bold">Personalized Path</h3>
-                        <p class="text-sm leading-relaxed text-slate-600 dark:text-slate-400">Tailored for each student, from A1 beginners to C1 advanced level.</p>
-                    </div>
-                    <div class="group flex flex-col items-center rounded-2xl border border-primary/10 bg-background-light p-8 text-center transition-all hover:shadow-xl dark:bg-background-dark">
-                        <div class="mb-6 flex h-16 w-16 items-center justify-center rounded-full bg-primary/10 text-primary transition-all group-hover:bg-primary group-hover:text-white">
-                            <span class="material-symbols-outlined text-3xl">public</span>
-                        </div>
-                        <h3 class="mb-3 text-xl font-bold">Cultural Connection</h3>
-                        <p class="text-sm leading-relaxed text-slate-600 dark:text-slate-400">Beyond vocabulary, we offer deep insights into German life and working styles.</p>
+
+                        <p>
+                            With years of experience teaching German and guiding students through the German system, we understand both the language and the journey behind it. We prepare our students not only for tests, but for job interviews, workplaces, universities, and everyday life in Germany.
+                        </p>
+                        <p>
+                            Today, NaNu NaNa is expanding beyond Vietnam. We now offer German courses in English and Chinese, making our proven learning path accessible to more international students.
+                        </p>
+                        <p>
+                            For students in China, we also provide full relocation support — from language training and application guidance to visa assistance and cultural preparation. From your first lesson to your first day in Germany, we walk this path with you.
+                        </p>
+                        <p class="mt-6 text-lg font-bold text-slate-900 dark:text-slate-100">
+                            At NaNu NaNa, your future in Germany starts with more than a course.<br/>
+                            <span class="text-primary">It starts with belief — and a clear plan.</span>
+                        </p>
                     </div>
                 </div>
             </div>
@@ -435,7 +463,7 @@
         </section>
 
         <!-- CTA Section -->
-        <section class="mx-auto max-w-7xl px-6 pb-24 lg:px-12">
+        <section class="mx-auto max-w-7xl px-6 pt-24 pb-24 lg:px-12">
             <div class="relative overflow-hidden rounded-3xl bg-primary px-8 py-16 text-center text-white lg:px-24">
                 <div class="absolute -right-20 -top-20 h-64 w-64 rounded-full bg-white/10"></div>
                 <div class="absolute -bottom-20 -left-20 h-64 w-64 rounded-full bg-accent/20"></div>
@@ -445,6 +473,40 @@
                     <button class="rounded-xl bg-white px-8 py-4 text-lg font-bold text-primary shadow-lg transition-all hover:scale-105">Get a Consultation</button>
                     <button class="rounded-xl bg-accent px-8 py-4 text-lg font-bold text-white shadow-lg transition-all hover:scale-105">Hotline: 09xx xxx xxx</button>
                 </div>
+            </div>
+        </section>
+
+        <!-- Contact Form Section -->
+        <section class="bg-white py-24 dark:bg-background-dark/50" id="contact-form">
+            <div class="mx-auto max-w-3xl px-6 lg:px-12">
+                <div class="mb-12 text-center">
+                    <h2 class="mb-4 text-3xl font-black lg:text-4xl">Get in Touch</h2>
+                    <div class="mx-auto h-1 w-24 rounded-full bg-accent"></div>
+                    <p class="mt-6 text-slate-600 dark:text-slate-400">Leave your details below and we will get back to you as soon as possible.</p>
+                </div>
+                <form action="#" class="grid grid-cols-1 gap-6 sm:grid-cols-2" method="POST">
+                    <div class="sm:col-span-2">
+                        <label class="mb-2 block text-sm font-semibold" for="full-name">Full name</label>
+                        <input class="w-full rounded-xl border border-primary/20 bg-background-light px-4 py-3 transition-colors focus:border-primary focus:outline-none dark:bg-background-dark" id="full-name" name="full-name" placeholder="John Doe" required type="text"/>
+                    </div>
+                    <div>
+                        <label class="mb-2 block text-sm font-semibold" for="email">Email</label>
+                        <input class="w-full rounded-xl border border-primary/20 bg-background-light px-4 py-3 transition-colors focus:border-primary focus:outline-none dark:bg-background-dark" id="email" name="email" placeholder="example@gmail.com" required type="email"/>
+                    </div>
+                    <div>
+                        <label class="mb-2 block text-sm font-semibold" for="phone">Phone number</label>
+                        <input class="w-full rounded-xl border border-primary/20 bg-background-light px-4 py-3 transition-colors focus:border-primary focus:outline-none dark:bg-background-dark" id="phone" name="phone" placeholder="+1 234 567 890" required type="tel"/>
+                    </div>
+                    <div class="sm:col-span-2">
+                        <label class="mb-2 block text-sm font-semibold" for="message">Message</label>
+                        <textarea class="w-full rounded-xl border border-primary/20 bg-background-light px-4 py-3 transition-colors focus:border-primary focus:outline-none dark:bg-background-dark" id="message" name="message" placeholder="Which course are you interested in?" required rows="4"></textarea>
+                    </div>
+                    <div class="sm:col-span-2">
+                        <button class="w-full rounded-xl bg-primary py-4 text-lg font-bold text-white shadow-lg transition-all hover:scale-[1.01] hover:bg-primary/90" type="submit">
+                            Send message
+                        </button>
+                    </div>
+                </form>
             </div>
         </section>
 
