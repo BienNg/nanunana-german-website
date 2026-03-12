@@ -48,9 +48,6 @@
                     <a class="text-sm font-semibold transition-colors hover:text-primary nav-link" href="#contact-form">Contact</a>
                 </nav>
                 <div class="flex items-center gap-4">
-                    <button class="hidden rounded-full bg-primary px-6 py-2 text-sm font-bold text-white transition-all hover:bg-primary/90 hover:scale-105 hover:shadow-lg hover:shadow-primary/30 active:scale-95 sm:block">
-                        Register
-                    </button>
                     <button id="mobile-menu-btn" class="flex h-10 w-10 items-center justify-center rounded-full border border-primary/20 text-primary transition-all hover:bg-primary/10 active:scale-95 md:hidden">
                         <span class="material-symbols-outlined">menu</span>
                     </button>
@@ -63,9 +60,6 @@
                     <a class="text-sm font-semibold transition-colors hover:text-primary nav-link w-fit" href="#about">About Us</a>
                     <a class="text-sm font-semibold transition-colors hover:text-primary nav-link w-fit" href="#courses">Courses</a>
                     <a class="text-sm font-semibold transition-colors hover:text-primary nav-link w-fit" href="#contact-form">Contact</a>
-                    <button class="rounded-full bg-primary px-6 py-2 text-sm font-bold text-white transition-all hover:bg-primary/90 hover:scale-105 hover:shadow-lg hover:shadow-primary/30 active:scale-95 w-fit mt-2">
-                        Register
-                    </button>
                 </nav>
             </div>
         </header>
@@ -85,10 +79,10 @@
                         Join me on the path to mastering the German language and culture with an optimal learning path and guaranteed international standards.
                     </p>
                     <div class="flex flex-wrap gap-4">
-                        <button class="rounded-xl bg-primary px-8 py-4 text-lg font-bold text-white transition-all hover:scale-105 hover:shadow-xl hover:shadow-primary/30 active:scale-95">
+                        <button id="hero-contact-btn" class="rounded-xl bg-primary px-8 py-4 text-lg font-bold text-white transition-all hover:scale-105 hover:shadow-xl hover:shadow-primary/30 active:scale-95">
                             Contact Now
                         </button>
-                        <button class="rounded-xl border-2 border-primary/20 bg-transparent px-8 py-4 text-lg font-bold text-primary transition-all hover:bg-primary/5 hover:border-primary/50 active:scale-95">
+                        <button id="hero-view-courses-btn" class="rounded-xl border-2 border-primary/20 bg-transparent px-8 py-4 text-lg font-bold text-primary transition-all hover:bg-primary/5 hover:border-primary/50 active:scale-95">
                             View Courses
                         </button>
                     </div>
@@ -219,7 +213,7 @@
         </section>
 
         <!-- Detailed Level Sections (modeled after reference2.html) -->
-        <section class="bg-white dark:bg-background-dark/50 py-20 px-6 lg:px-12">
+        <section class="bg-white dark:bg-background-dark/50 py-20 px-6 lg:px-12" id="learning-path">
             <div class="max-w-5xl mx-auto space-y-16">
                 <div class="text-center space-y-4 mb-12">
                     <h2 class="text-3xl font-bold tracking-tight">Learning Path by CEFR Levels</h2>
@@ -462,20 +456,6 @@
             </div>
         </section>
 
-        <!-- CTA Section -->
-        <section class="mx-auto max-w-7xl px-6 pt-24 pb-24 lg:px-12">
-            <div class="relative overflow-hidden rounded-3xl bg-primary px-8 py-16 text-center text-white lg:px-24 animate-on-scroll">
-                <div class="absolute -right-20 -top-20 h-64 w-64 rounded-full bg-white/10"></div>
-                <div class="absolute -bottom-20 -left-20 h-64 w-64 rounded-full bg-accent/20"></div>
-                <h2 class="relative z-10 text-3xl font-black lg:text-5xl">Ready to start your future?</h2>
-                <p class="relative z-10 mx-auto mt-6 max-w-2xl text-lg text-white/80">Register for a free consultation today to get a German learning path that best fits your goals.</p>
-                <div class="relative z-10 mt-10 flex flex-wrap justify-center gap-4">
-                    <button class="rounded-xl bg-white px-8 py-4 text-lg font-bold text-primary shadow-lg transition-all hover:scale-105 hover:shadow-xl active:scale-95">Get a Consultation</button>
-                    <button class="rounded-xl bg-accent px-8 py-4 text-lg font-bold text-white shadow-lg transition-all hover:scale-105 hover:shadow-xl hover:shadow-accent/30 active:scale-95">Hotline: 09xx xxx xxx</button>
-                </div>
-            </div>
-        </section>
-
         <!-- Contact Form Section -->
         <section class="bg-white py-24 dark:bg-background-dark/50" id="contact-form">
             <div class="mx-auto max-w-3xl px-6 lg:px-12">
@@ -554,11 +534,7 @@
                         <ul class="space-y-4 text-sm text-slate-500">
                             <li class="flex gap-3">
                                 <span class="material-symbols-outlined text-primary">location_on</span>
-                                <span>Ho Chi Minh City, Vietnam</span>
-                            </li>
-                            <li class="flex gap-3">
-                                <span class="material-symbols-outlined text-primary">call</span>
-                                <span>+84 123 456 789</span>
+                                <span>Stuttgart, Germany</span>
                             </li>
                             <li class="flex gap-3">
                                 <span class="material-symbols-outlined text-primary">alternate_email</span>

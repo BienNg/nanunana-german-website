@@ -36,6 +36,35 @@ document.addEventListener('DOMContentLoaded', () => {
     const animatedElements = document.querySelectorAll('.animate-on-scroll');
     animatedElements.forEach(el => observer.observe(el));
 
+    // Smooth scroll helpers for hero buttons
+    const scrollToSection = (sectionId) => {
+        const target = document.getElementById(sectionId);
+        if (!target) return;
+
+        const headerOffset = 100; // account for sticky header height
+        const rect = target.getBoundingClientRect();
+        const offsetTop = window.pageYOffset + rect.top - headerOffset;
+
+        window.scrollTo({
+            top: offsetTop,
+            behavior: 'smooth',
+        });
+    };
+
+    const heroContactBtn = document.getElementById('hero-contact-btn');
+    if (heroContactBtn) {
+        heroContactBtn.addEventListener('click', () => {
+            scrollToSection('contact-form');
+        });
+    }
+
+    const heroViewCoursesBtn = document.getElementById('hero-view-courses-btn');
+    if (heroViewCoursesBtn) {
+        heroViewCoursesBtn.addEventListener('click', () => {
+            scrollToSection('learning-path');
+        });
+    }
+
     // Contact form – submit to Zapier webhook
     const ZAPIER_WEBHOOK_URL = 'https://hooks.zapier.com/hooks/catch/13711388/u0wcv8a/';
     const contactForm = document.getElementById('contact-form-el');
